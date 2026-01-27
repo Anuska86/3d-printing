@@ -2,6 +2,8 @@ import "./globals.css";
 import Link from "next/link";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 
+//Fonts
+
 const albertSans = Albert_Sans({
   subsets: ["latin"],
   display: "swap",

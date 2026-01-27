@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutPage() {
   return (
     <main>
@@ -5,10 +7,13 @@ export default function AboutPage() {
         <div className="grid items-center gap-12 md:grid-cols-2">
           {/* Image Container with the Circular Mask */}
           <div className="relative aspect-square w-full max-w-md mx-auto overflow-hidden rounded-full border-none">
-            <img
+            <Image
               src="/about-img.jpg"
               alt="A 3D printer printing an orange figure"
               className="w-full h-full object-cover"
+              width={742}
+              height={742}
+              loading="eager"
             />
           </div>
 
