@@ -1,5 +1,6 @@
 import "./globals.css";
 import Link from "next/link";
+import Image from "next/image";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 
 //Fonts
@@ -31,16 +32,20 @@ export default function RootLayout({
           <nav className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4 md:px-16">
             <Link href="/" className="relative">
               {/* Desktop logo */}
-              <img
+              <Image
                 src="/printforge-logo.svg"
                 alt="PrintForge Logo"
                 className="w-[200px] h-auto hidden md:block"
+                width={100}
+                height={100}
               />
               {/* Mobile logo */}
-              <img
+              <Image
                 src="/printforge-logo-icon.svg"
                 alt="PrintForge Logo"
                 className="w-[40px] h-auto block md:hidden"
+                width={80}
+                height={80}
               />
             </Link>
             <ul className="flex items-center gap-8">
