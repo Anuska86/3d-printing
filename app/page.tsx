@@ -2,15 +2,6 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black">
       <div className="max-w-7xl mx-auto px-6 py-4 md:px-16">
-        {/* Navbar */}
-        <nav className="flex justify-between items-center mb-16">
-          <div className="font-bold text-xl tracking-tighter">printforge</div>
-          <div className="flex gap-8 text-xs font-semibold uppercase tracking-widest">
-            <a href="#">3D Models</a>
-            <a href="#">About</a>
-          </div>
-        </nav>
-
         {/* Hero Section */}
         <section className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 lg:gap-24">
           {/* Text Content */}
@@ -32,7 +23,7 @@ export default function Home() {
 
           {/* Image Placeholder */}
           <div className="relative w-full max-w-md aspect-square bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
-            <img src="/home-page-hero-img.png"></img>
+            <img src="/home-page-hero-img.jpg"></img>
           </div>
         </section>
       </div>
