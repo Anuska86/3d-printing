@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-white text-black">
@@ -23,7 +25,13 @@ export default function Home() {
 
           {/* Image Placeholder */}
           <div className="relative w-full max-w-md aspect-square bg-gray-100 rounded-full flex items-center justify-center overflow-hidden">
-            <img src="/home-page-hero-img.jpg"></img>
+            <Image
+              src="/home-page-hero-img.jpg"
+              alt="3D printer next to some printed figures"
+              width={742}
+              height={742}
+              loading="eager"
+            />
           </div>
         </section>
       </div>
