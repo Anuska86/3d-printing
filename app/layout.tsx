@@ -35,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                 className="w-[200px] h-auto hidden md:block"
                 width={100}
                 height={100}
+                loading="eager"
               />
               {/* Mobile logo */}
               <Image
