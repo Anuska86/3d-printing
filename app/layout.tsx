@@ -1,7 +1,5 @@
 import "./globals.css";
 import type { RootLayoutProps } from "./utils/types";
-import Link from "next/link";
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 

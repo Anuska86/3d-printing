@@ -24,7 +24,7 @@ export default function Navbar() {
         </Link>
         <ul className="flex items-center gap-2.5">
           <li className="text-sm uppercase cursor-pointer">
-            <Link href="/3d-models">3D Models</Link>
+            <Link href="/models">3D Models</Link>
           </li>
           <li className="text-sm uppercase cursor-pointer">
             <Link href="/about">About</Link>
