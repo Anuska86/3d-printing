@@ -20,6 +20,7 @@ export default async function ModelDetailPage({
             alt={model.name}
             fill
             className="rounded-lg object-cover"
+            loading="eager"
           />
         </div>
 
