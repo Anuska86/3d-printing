@@ -16,7 +16,7 @@ export default async function ModelDetailPage({
         {/* Image Section */}
         <div className="relative aspect-square w-full md:w-1/2">
           <Image
-            src="/placeholder.png"
+            src="/3dAlivePrint.jpg"
             alt={model.name}
             fill
             className="rounded-lg object-cover"

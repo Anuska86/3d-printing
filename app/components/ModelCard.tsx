@@ -17,7 +17,7 @@ export default function ModelCard({ model }: ModelCardProps) {
       >
         <div className="relative aspect-square">
           <Image
-            src="/placeholder.png"
+            src="/3dAlivePrint.jpg"
             alt={model.name}
             fill
             className="object-cover"
