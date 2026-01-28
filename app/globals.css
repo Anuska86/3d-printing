@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+/*Theme*/
+
+@theme {
+  --color-brand:#6E026F; 
+}
+
+
 /*Fonts*/
 
 h1,

@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import Link from "next/link";
 import { getAllCategories } from "../utils/lib/categories";
 import { Category } from "../utils/types";
+import NavLink from "../components/NavLink";
 
 export default function ModelsLayout({ children }: { children: ReactNode }) {
   const categories: Category[] = getAllCategories();
@@ -13,14 +13,14 @@ export default function ModelsLayout({ children }: { children: ReactNode }) {
         <div className="relative">
           <nav className="w-full overflow-x-auto  scrollbar-hide">
             <ul className="flex px-4 py-3 space-x-4 whitespace-nowrap md:p-4">
-              <Link href="/models">All</Link>
+              <NavLink href="/models">All</NavLink>
               {categories.map((category) => (
-                <Link
+                <NavLink
                   href={`/models/categories/${category.slug}`}
                   key={category.slug}
                 >
                   {category.displayName}
-                </Link>
+                </NavLink>
               ))}
             </ul>
           </nav>
@@ -29,7 +29,7 @@ export default function ModelsLayout({ children }: { children: ReactNode }) {
         </div>
       </aside>
       {/* Main Content Area */}
-      <main className="flex-1 p-4 md:ml-64 bg-red-500 md:bg-blue-500">
+      <main className="flex-1 p-4 md:ml-64">
         {" "}
         {children}
       </main>
