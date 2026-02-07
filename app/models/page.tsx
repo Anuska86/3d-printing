@@ -18,15 +18,16 @@ export default async function Page({ searchParams }: ModelsPageProps) {
 
   return (
     <div>
-      <form className="search-form">
+      <form className="w-full px-5 md:px-0 md:max-w-xl">
         <label htmlFor="3d-model" className="sr-only"></label>
         <input
           type="search"
           id="3d-model-search"
           name="query"
           placeholder="Search for 3d models..."
-          className="search-input"
           autoComplete="off"
+          defaultValue={query}
+          className="w-full py-3 pl-5 pr-5 text-sm placeholder-gray-500 bg-white border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
         ></input>
       </form>
       <ModelsGrid title="3D Models" models={filteredModels} />;
