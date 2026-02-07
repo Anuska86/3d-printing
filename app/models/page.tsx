@@ -2,8 +2,20 @@ import ModelsGrid from "../components/ModelsGrid";
 import type { ModelsPageProps } from "../utils/types";
 import { getModels } from "../utils/lib/models";
 
-export default async function Page({searchParams}) {
+export default async function Page({ searchParams }: ModelsPageProps) {
+  const { query } = await searchParams;
   const models = await getModels();
+
+  const lowQuery = query?.toLowerCase();
+
+  const filteredModels = lowQuery
+    ? models.filter(
+        (obj) =>
+          obj.name.toLowerCase().includes(lowQuery) ||
+          obj.description.toLowerCase().includes(lowQuery),
+      )
+    : models;
+
   return (
     <div>
       <form className="search-form">
@@ -17,7 +29,7 @@ export default async function Page({searchParams}) {
           autoComplete="off"
         ></input>
       </form>
-      <ModelsGrid title="3D Models" models={models} />;
+      <ModelsGrid title="3D Models" models={filteredModels} />;
     </div>
   );
 }
