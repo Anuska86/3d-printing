@@ -3,9 +3,8 @@
 /*Theme*/
 
 @theme {
-  --color-brand:#6E026F; 
+  --color-brand: #6e026f;
 }
-
 
 /*Fonts*/
 
@@ -16,4 +15,18 @@ h4,
 h5,
 h6 {
   font-family: var(--font-montserrat-alternates);
+}
+
+/*sr only*/
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
