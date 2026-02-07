@@ -11,15 +11,15 @@ export default async function Page({ searchParams }: ModelsPageProps) {
 
   const filteredModels = lowQuery
     ? models.filter(
-        (obj) =>
-          obj.name.toLowerCase().includes(lowQuery) ||
-          obj.description.toLowerCase().includes(lowQuery),
+        (model) =>
+          model.name.toLowerCase().includes(lowQuery) ||
+          model.description.toLowerCase().includes(lowQuery),
       )
     : models;
 
   return (
     <div>
-      <Form action="/" className="w-full px-5 md:px-0 md:max-w-xl">
+      <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl">
         <label htmlFor="3d-model" className="sr-only"></label>
         <input
           type="search"
