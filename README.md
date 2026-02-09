@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🛠️ PrintForge
 
-## Getting Started
+PrintForge is a modern platform for 3D printing enthusiasts, makers, and professional designers to share and discover high-quality 3D models.
 
-First, run the development server:
+## 📸 Gallery
 
-```bash
+|              Main Landing Page              |                  Models Explorer                   |
+| :-----------------------------------------: | :------------------------------------------------: |
+| ![Main Page](./public/screenshots/main.png) | ![All Models](./public/screenshots/all-models.png) |
+
+|                 Category Filtering                 |             About PrintForge             |
+| :------------------------------------------------: | :--------------------------------------: |
+| ![Filters](./public/screenshots/selected-type.png) | ![About](./public/screenshots/about.png) |
+
+🚀 Features
+
+- Curated 3D Models: Browse through a wide range of categories.
+
+- Modern UI: Built with a sleek, floating navigation and glassmorphism effects.
+
+- Performance First: Optimized using Next.js Image components for lightning-fast asset loading.
+
+- Responsive Design: Fully functional on mobile and desktop.
+
+🛠️ Tech Stack
+
+- Framework: Next.js 15+ (App Router)
+
+- Styling: Tailwind CSS v4
+
+- Type Safety: TypeScript
+
+- Deployment: Vercel
+
+📂 Project Structure
+
+This project uses Path Aliases (@/\*) for cleaner imports:
+
+- @/components: UI components (Navbar, ModelGrid, etc.)
+
+- @/utils: Utility functions and TypeScript types.
+
+- @/public: Optimized SVG assets and logos.
+
+🏁 Getting Started
+
+1. Clone the repository:
+
+git clone https://github.com/Anuska86/3d-printing
+
+2. Install dependencies:
+
+npm install
+
+3. Run the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open the app: Navigate to http://localhost:3000 to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🎨 Design Tokens
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The brand identity is centered around our custom "Brand Purple":
 
-## Learn More
+- Brand Color: #6e026f
 
-To learn more about Next.js, take a look at the following resources:
+- Font: Montserrat Alternates (via Next.js Google Fonts)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👤 Author
 
-## Deploy on Vercel
+Ana Sappia Rey _Frontend Developer_
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]https://www.linkedin.com/in/ana-sappia-rey/
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]https://github.com/Anuska86
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
