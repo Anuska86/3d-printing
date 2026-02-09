@@ -23,7 +23,7 @@ export default function Navbar() {
               className="hidden md:block h-10 w-auto"
               width={200}
               height={50}
-              priority
+              priority={true}
             />
             {/* Mobile Logo */}
             <Image
@@ -32,7 +32,7 @@ export default function Navbar() {
               className="block md:hidden h-10 w-10"
               width={40}
               height={40}
-              priority
+              priority={false}
             />
           </div>
         </Link>
