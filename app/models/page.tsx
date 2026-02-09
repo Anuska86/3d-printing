@@ -26,13 +26,14 @@ export default async function Page({ searchParams }: ModelsPageProps) {
             name="query"
             placeholder="Search for 3d models..."
             defaultValue={query}
-            className="w-full py-3 px-6 text-sm bg-white border border-gray-200 rounded-full shadow-sm 
+            className="w-full py-4 pl-7 pr-14 text-sm bg-white border border-gray-200 rounded-full shadow-md 
                    transition-all duration-200
                    focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none 
-                   md:text-base"
+                   md:text-base
+                   [&::-webkit-search-cancel-button]:appearance-none"
           />
           {/* Search Icon  */}
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-brand">
+          <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-lg group-focus-within:text-brand">
             🔍
           </div>
         </div>
