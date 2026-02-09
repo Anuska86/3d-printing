@@ -18,20 +18,26 @@ export default async function Page({ searchParams }: ModelsPageProps) {
     : models;
 
   return (
-    <div>
-      <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl">
-        <label htmlFor="3d-model-search" className="sr-only"></label>
-        <input
-          type="search"
-          id="3d-model-search"
-          name="query"
-          placeholder="Search for 3d models..."
-          autoComplete="off"
-          defaultValue={query}
-          className="w-full py-3 pl-5 pr-5 text-sm placeholder-gray-500 border border-[#606060] rounded-full focus:border-[#606060] focus:outline-none focus:ring-0 md:text-base"
-        ></input>
+    <div className="flex flex-col items-center mb-10">
+      <Form action="/models" className="w-full px-5 md:px-0 md:max-w-xl">
+        <div className="relative group">
+          <input
+            type="search"
+            name="query"
+            placeholder="Search for 3d models..."
+            defaultValue={query}
+            className="w-full py-3 px-6 text-sm bg-white border border-gray-200 rounded-full shadow-sm 
+                   transition-all duration-200
+                   focus:border-brand focus:ring-4 focus:ring-brand/10 focus:outline-none 
+                   md:text-base"
+          />
+          {/* Search Icon  */}
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-brand">
+            🔍
+          </div>
+        </div>
       </Form>
-      <ModelsGrid title="3D Models" models={filteredModels} />;
+      <ModelsGrid title="3D Models" models={filteredModels} />
     </div>
   );
 }
