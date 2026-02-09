@@ -20,6 +20,8 @@ PrintForge is a modern platform for 3D printing enthusiasts, makers, and profess
 
 - Performance First: Optimized using Next.js Image components for lightning-fast asset loading.
 
+- URL-State Search: Utilizes next/form for SEO-friendly, shareable search results via URL parameters.
+
 - Responsive Design: Fully functional on mobile and desktop.
 
 🛠️ Tech Stack
@@ -70,9 +72,9 @@ The brand identity is centered around our custom "Brand Purple":
 
 ## 👤 Author
 
-Ana Sappia Rey _Frontend Developer_
+Ana Sappia Rey - Frontend Developer
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)]https://www.linkedin.com/in/ana-sappia-rey/
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]https://github.com/Anuska86
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ana-sappia-rey/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Anuska86)
 
 ---
