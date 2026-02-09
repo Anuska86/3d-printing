@@ -8,7 +8,7 @@ import { Category } from "@/utils/types";
 export default function CategoriesNav() {
   const pathname = usePathname();
   const categories: Category[] = getAllCategories();
-  console.log(categories);
+  
 
   return (
     <aside className="sticky top-18 z-40 w-full py-4 pointer-events-none">
