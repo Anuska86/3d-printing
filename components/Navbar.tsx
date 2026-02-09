@@ -18,7 +18,7 @@ export default function Navbar() {
           <div className="relative cursor-pointer">
             {/* Desktop Logo */}
             <Image
-              src={PFLogo.src}
+              src={PFLogo}
               alt="PrintForge Logo"
               className="hidden md:block h-10 w-auto"
               width={200}
@@ -27,7 +27,7 @@ export default function Navbar() {
             />
             {/* Mobile Logo */}
             <Image
-              src={PFLogoIcon.src}
+              src={PFLogoIcon}
               alt="PrintForge Logo"
               className="block md:hidden h-10 w-10"
               width={40}
