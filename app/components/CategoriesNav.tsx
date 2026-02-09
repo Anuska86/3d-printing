@@ -11,17 +11,17 @@ export default function CategoriesNav() {
   console.log(categories);
 
   return (
-    <aside className="sticky top-0 z-10 w-full bg-white border-b border-gray-200   md:-translate-y-1/2 md:border-none">
+    <aside className="sticky top-18.5 z-40 w-full bg-white border-b border-gray-200">
       <div className="relative">
         <nav className="w-full overflow-x-auto  scrollbar-hide">
-          <ul className="flex px-4 py-3 space-x-4 whitespace-nowrap md:p-4">
+          <ul className="flex px-4 py-3 space-x-4 whitespace-nowrap md:justify-center">
             <NavLink href="/models" isActive={pathname === "/models"}>
               All
             </NavLink>
             {categories.map((item) => (
               <NavLink
                 href={`/models/categories/${item.slug}`}
-                isActive={pathname === "/models/categories/${item.slug}"}
+                isActive={pathname === `/models/categories/${item.slug}`}
                 key={item.slug}
               >
                 {item.displayName}
