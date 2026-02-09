@@ -4,6 +4,7 @@
 
 @theme {
   --color-brand: #6e026f;
+  --color-bg-main: #f0f2f5;
 
   @keyframes jump {
     0%,
@@ -16,6 +17,13 @@
   }
 
   --animate-jump: jump 0.3s ease-in-out;
+}
+
+/*Body*/
+
+body {
+  background-color: var(--color-bg-main) !important;
+  color: #1a1a1a;
 }
 
 /*Fonts*/

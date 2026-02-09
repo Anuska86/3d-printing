@@ -19,18 +19,19 @@ export default function AboutPage() {
 
           <div>
             <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.2em] text-gray-500">
-              About PrintForge
+              Our Story
             </p>
             <h1 className="mb-6 text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight">
-              Empowering Makers Worldwide
+              Where Ideas Take Shape
             </h1>
             <p className="mb-6 text-gray-600 text-lg leading-relaxed">
-              Founded in 2023, PrintForge has quickly become the go-to platform
-              for 3D printing enthusiasts, makers, and professional designers.
+              PrintForge started as a small project to help makers share their
+              best work. Today, we’re a global library of thousands of
+              high-quality 3D models.
             </p>
             <p className="text-gray-600 text-lg leading-relaxed">
-              Our mission is to foster a vibrant community where creativity
-              meets technology.
+              We believe that everyone should have the tools to bring their
+              digital designs into the physical world.
             </p>
           </div>
         </div>

@@ -11,8 +11,8 @@ export default function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+    <header className="w-full sticky top-0 z-50 py-4 px-4">
+      <nav className="max-w-5xl mx-auto flex items-center justify-between px-6 py-3 bg-white rounded-full shadow-lg border border-gray-100">
         <Link href="/">
           <div className="relative cursor-pointer">
             {/* Desktop Logo */}
