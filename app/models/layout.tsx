@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import CategoriesNav from "../../components/CategoriesNav";
+import CategoriesNav from "@/components/CategoriesNav";
 
 export default function ModelsLayout({ children }: { children: ReactNode }) {
   return (

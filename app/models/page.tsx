@@ -1,7 +1,7 @@
 import Form from "next/form";
-import ModelsGrid from "../../components/ModelsGrid";
-import type { ModelsPageProps } from "../../utils/types";
-import { getModels } from "../../utils/lib/models";
+import ModelsGrid from "@/components/ModelsGrid";
+import type { ModelsPageProps } from "@/utils/types";
+import { getModels } from "@/utils/lib/models";
 
 export default async function Page({ searchParams }: ModelsPageProps) {
   const { query } = await searchParams;
@@ -20,7 +20,7 @@ export default async function Page({ searchParams }: ModelsPageProps) {
   return (
     <div>
       <Form action="/3d-models" className="w-full px-5 md:px-0 md:max-w-xl">
-        <label htmlFor="3d-model" className="sr-only"></label>
+        <label htmlFor="3d-model-search" className="sr-only"></label>
         <input
           type="search"
           id="3d-model-search"
