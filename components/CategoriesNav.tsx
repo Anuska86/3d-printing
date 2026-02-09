@@ -2,8 +2,8 @@
 
 import NavLink from "./NavLink";
 import { usePathname } from "next/navigation";
-import { getAllCategories } from "../utils/lib/categories";
-import { Category } from "../utils/types";
+import { getAllCategories } from "@/utils/lib/categories";
+import { Category } from "@/utils/types";
 
 export default function CategoriesNav() {
   const pathname = usePathname();
@@ -11,10 +11,10 @@ export default function CategoriesNav() {
   console.log(categories);
 
   return (
-    <aside className="sticky top-18.5 z-40 w-full bg-white border-b border-gray-200">
-      <div className="relative">
-        <nav className="w-full overflow-x-auto  scrollbar-hide">
-          <ul className="flex px-4 py-3 space-x-4 whitespace-nowrap md:justify-center">
+    <aside className="sticky top-18 z-40 w-full py-4 pointer-events-none">
+      <div className="max-w-fit mx-auto pointer-events-auto">
+        <nav className="bg-white/70 backdrop-blur-md border border-gray-200 shadow-sm rounded-full px-2">
+          <ul className="flex p-1 space-x-1 whitespace-nowrap">
             <NavLink href="/models" isActive={pathname === "/models"}>
               All
             </NavLink>
