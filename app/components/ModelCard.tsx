@@ -1,10 +1,23 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { FaRegHeart } from "react-icons/fa6";
+import { useState } from "react";
+import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import Pill from "./Pill";
 import { ModelCardProps } from "../utils/types";
 
 export default function ModelCard({ model }: ModelCardProps) {
+  const [isLiked, setIsLiked] = useState(false);
+
+  const toggleLike = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsLiked(!isLiked);
+
+    //call the database/API when exists
+  };
+
   return (
     <Link
       href={`/3d-models/${model.id}`}
@@ -44,11 +57,25 @@ export default function ModelCard({ model }: ModelCardProps) {
             className="flex items-center mt-2 text-gray-600"
             aria-label={`${model.likes} likes`}
           >
-            <FaRegHeart
-              className="w-5 h-5 mr-1 text-gray-400"
-              aria-hidden="true"
-            />
-            <span>{model.likes}</span>
+            <button
+              onClick={toggleLike}
+              className="flex items-center mt-2 transition-colors group/heart"
+              aria-label={isLiked ? "Unlike" : "Like"}
+            >
+              {isLiked ? (
+                <FaHeart className="w-5 h-5 mr-1 text-red-500 animate-jump" />
+              ) : (
+                <FaRegHeart className="w-5 h-5 mr-1 text-gray-400 group-hover/heart:text-red-400" />
+              )}
+
+              <span
+                className={
+                  isLiked ? "text-red-600 font-medium" : "text-gray-600"
+                }
+              >
+                {isLiked ? model.likes + 1 : model.likes}
+              </span>
+            </button>
           </div>
         </div>
       </div>

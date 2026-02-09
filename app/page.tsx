@@ -8,7 +8,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-12 lg:gap-24">
           {/* Text Content */}
           <div className="max-w-xl">
-            <p className="text-[10px] uppercase tracking-[0.2em] font-bold text-gray-500 mb-4">
+            <p className="text-[14px] uppercase tracking-[0.2em] font-bold text-gray-500 mb-4">
               Bring Your Imagination to Life
             </p>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-6">

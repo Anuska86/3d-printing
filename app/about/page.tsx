@@ -18,7 +18,7 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <p className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+            <p className="mb-4 text-[12px] font-bold uppercase tracking-[0.2em] text-gray-500">
               About PrintForge
             </p>
             <h1 className="mb-6 text-4xl md:text-5xl font-extrabold tracking-tighter leading-tight">
