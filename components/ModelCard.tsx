@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import Pill from "./Pill";
-import { ModelCardProps } from "../utils/types";
+import { ModelCardProps } from "@/utils/types";
 
 export default function ModelCard({ model }: ModelCardProps) {
   const [isLiked, setIsLiked] = useState(false);

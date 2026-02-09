@@ -1,6 +1,6 @@
 import "./globals.css";
-import type { RootLayoutProps } from "./utils/types";
-import Navbar from "./components/Navbar";
+import type { RootLayoutProps } from "../utils/types";
+import Navbar from "../components/Navbar";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google";
 
 //Fonts

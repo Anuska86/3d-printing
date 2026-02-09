@@ -1,5 +1,5 @@
-import type { ModelDetailPageProps } from "@/app/utils/types";
-import { getModelById } from "@/app/utils/lib/models";
+import type { ModelDetailPageProps } from "@/utils/types";
+import { getModelById } from "@/utils/lib/models";
 import { FaRegHeart } from "react-icons/fa6";
 import Image from "next/image";
 

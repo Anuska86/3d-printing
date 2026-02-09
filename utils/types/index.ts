@@ -37,9 +37,9 @@ export type RootLayoutProps = Readonly<{
 }>;
 
 export type ModelsPageProps = {
-  searchParams: {
+  searchParams: Promise<{
     query?: string;
-  };
+  }>;
 };
 
 export type ModelDetailPageProps = {
